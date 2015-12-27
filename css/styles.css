@@ -1,0 +1,251 @@
+/* reset browser styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0; 
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol { 
+	padding-left: 1.4em;
+	list-style: decimal;
+}
+ul {
+	padding-left: 1.4em
+	list-style: square;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+body {
+	line-height: 1.2;
+}	
+/* end reset browser styles */
+
+/*фон страницы*/
+body {
+	background:  #fbfcfd url(../images/background.jpg) top left;
+/*	background: url(../images/background.png) top left repeat-x;
+	background: url(../images/header.png) left top repeat-x,
+	            url(../images/footer.png) left 690px repeat-x,
+	            url(../images/background.jpg) left 120px repeat-x;*/
+	font-family: "Arial Narrow","Helvetica Narrow", Tahoma, Arial, Helvetica,sans-serif;
+}
+
+
+
+
+header {
+	margin: 0 auto;
+	height:120px;
+	background-color: #eff3f7; 
+}
+
+/*ширира основной части без верхней и нижней полос*/
+nav, .mainpart, .footertext  {
+    max-width: 960px;
+} 
+
+/*центральные части шапки и подвала*/
+nav, .footertext {
+    margin: 0 auto; 
+}
+
+/*центральная часть  делаем отступ сверху от шапки*/
+.mainpart {
+	margin: 40px auto 0 auto;
+}
+
+/*боковая панель меню*/
+aside {
+	color: #3ba8c0;
+    width: 250px;
+    float:left;
+    background-color: #eff3f7;
+    border-radius: 4px;
+    overflow: hidden;
+    clear: both;
+}
+
+/*логотип*/
+.logo {
+	width: 50px;
+	height: 40px;
+	margin-top: 35px;
+	margin-left: 2px;
+	float: left;
+	background-image: url(../images/logo.png);
+}
+/*логотип текст - поскольку фотошоп не опознал его как текст, какой это шрифт - тоже непонятн, то сделал в виде картинки*/
+.logotext {
+    width: 179px;
+    height: 42px;
+    margin-top: 35px;
+    margin-left: 14px;
+	float: left;
+  	background-image: url(../images/logo_text.png);
+}
+/*новый логотоип - ссылка, внутри объединённая картинка как <img>, чтобы если картинка не грузится то текст*/
+.logolink {
+/*	display: block;*/	
+	margin-top: 39px;
+	margin-left: 2px;
+	float:left;
+	color: #58697a;
+/*	font-family: "Adobe Gothic Std B", Tahoma, Arial, Helvetica,sans-serif;*/
+    font-size: 25px;
+    text-decoration: none;
+}
+.logolink:hover {
+	color: #3ba8c0;
+}
+
+
+/*блок социальных сетей*/
+.social a {
+	display:block;
+	width: 47px;
+	height: 47px;
+    border-radius: 23.5px;
+    overflow: hidden;
+}
+
+/*кнопки социальных сетей*/
+.facebook {
+  	background: url(../images/facebook2.png) left top;	 
+}
+.vk {
+  	background: url(../images/vk2.png) left top;	 
+}
+.twitter {
+  	background: url(../images/twitter2.png) left top;	 
+}
+.github {
+  	background: url(../images/github2.png) left top;	 
+}
+/*при проведении мыши позиция картинок смещается*/
+.github:hover ,
+.vk:hover,
+.facebook:hover,
+.twitter:hover {
+    background-position: left 100%;
+}
+
+
+/*список кнопок соц. сетей*/
+header ul {
+	float:right;
+	margin-top: 30px;
+	margin-right: 2px;
+}
+/*элемент списка соц серей*/
+header ul li {
+	float: left;
+	margin-left: 22px;
+	list-style-type: none;
+}
+
+/*главное меню - элемент списка*/
+.mainmenu li {
+	height: 71px;
+	margin:0 auto ;
+	list-style-type: none;
+}
+/*элемент главного меню кроме последнего - бордер снизу*/
+.mainmenu li:not(:last-child) {
+	border-bottom: 2px solid #3ba8c0;
+}
+
+/*элемент главного меню - ссылка*/
+.mainmenu li a {
+	color: #3ba8c0;
+	font-size:  21px;
+	font-style: normal;
+	text-decoration: none;
+	display:block;
+    padding: 23px 0 23px 28px;
+}
+/*недоступная ссылка - другой цвет*/
+.mainmenu li a[href="#"] {
+	color: #959aa8;
+}
+/*ссылка при проводке мыши - кроме недоступной ссылки*/
+.mainmenu li a:hover:not([href="#"])  {
+    color: #eff3f7; 
+}
+/*элемент меню при проводке мыши*/
+.mainmenu li:hover{
+   background-color: #3ba8c0; 
+}
+/*элемент меню недоступный при проводке - цвет фона.
+запихать отрицание в предыдущий селектор не получилось, поэтому сделал отдельный селектор
+недоступный элемент нужно в html помечать дополнительным классом disabled*/
+.mainmenu .disabled:hover {
+    background-color: #eff3f7; 
+}
+
+/*статьи - 
+возможно, нужно задать отступ слева по-другому, более правильно - от меню,
+      но получилось только так - от края основного блока*/
+.content {
+	margin: 0 0 0 305px;
+}
+
+/*конкретная статья*/
+article {
+	margin: 0 auto 26px 0;
+    background-color: #eff3f7;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 0 0 18px 0;
+ }
+/*заголовок статьи*/
+article h2 {
+	color: #3ba8c0;
+	font-size:  27px;
+	padding: 18px 0 18px 20px; 
+	background: url(../images/border.png) left 100% no-repeat;
+}
+/*параграф*/
+article p {
+	font-size: 17px;
+	color: #4a545d;
+	margin: 23px 0 23px 58px;
+	padding: 0 0 0 65px;
+}
+/*картинки для параграфов различного класса*/
+article .work {
+	background: url(../images/portfolio.png) no-repeat left 4px; 
+}
+article .school {
+	background: url(../images/hat.png) no-repeat left 10px; 
+}
+article .upschool {
+	background: url(../images/document.png) no-repeat 8px 4px; 
+}
+
+/*в параграфе последняя строка выделена в отдельный <span> для задания размера шрифта*/
+article .lastline {
+	font-size: 15px;
+}
+
+/*подвал*/
+footer {
+	margin: 38px auto 0 auto;
+	height: 80px;
+	background-color: #eff3f7; 
+}
+footer p{
+	font-size: 13px;
+	color:color: #4a545d;
+	padding: 30px 0 30px 313px;
+}
+
