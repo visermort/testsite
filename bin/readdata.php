@@ -49,4 +49,14 @@ if(is_readable($filename))
 	}//if fileexists	
 }//function 
 
+//мои проекты
+function getprojects(){
+
+}
+
+//проекты с моим участием
+function getTakePart(){
+	
+}
+
 ?>

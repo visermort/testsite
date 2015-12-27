@@ -10,7 +10,7 @@
 <?php require_once("bin/readdata.php");  ?>
 <link  rel="stylesheet" href="css/styles.css">
 </head>
-<body class="home">
+<body class="portfolio">
 			<header>
 			    <nav>
                 <nav>
@@ -48,12 +48,12 @@
 		         </aside>
 		         <div class="content">
                         <article>
-                        	<h2>Опыт работы</h2>
-                            <?php getworks()?>	
+                        	<h2>Мои проекты</h2>
+                            <?php getprojects()?>	
                         </article>
                         <article>
-                        	<h2>Образование</h2>
-                            <?php getstudy() ?>
+                        	<h2>Проекты с моим участием</h2>
+                            <?php getTakePart() ?>
                         </article>
 		         </div>	
 		    </div>

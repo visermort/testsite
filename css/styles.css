@@ -191,6 +191,11 @@ header ul li {
 .mainmenu .disabled:hover {
     background-color: #eff3f7; 
 }
+/*выделить текущий пуект меню*/
+.home .homelink,
+.portfolio .portfoliolink {
+text-decoration: underline;
+}
 
 /*статьи - 
 возможно, нужно задать отступ слева по-другому, более правильно - от меню,
