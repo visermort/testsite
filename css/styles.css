@@ -191,10 +191,10 @@ header ul li {
 .mainmenu .disabled:hover {
     background-color: #eff3f7; 
 }
-/*выделить текущий пуект меню*/
+/*выделить текущий пункт меню - но пока не делаем - нет в задании*/
 .home .homelink,
 .portfolio .portfoliolink {
-text-decoration: underline;
+/*text-decoration: underline;*/
 }
 
 /*статьи - 
@@ -226,6 +226,17 @@ article p {
 	margin: 23px 0 23px 58px;
 	padding: 0 0 0 65px;
 }
+/*ссылка на портфолио в содержимом*/
+article a {
+	display:block;
+	text-decoration: none;
+}
+/*картинка в портфолио*/
+article img {
+	float:left;
+	margin-left: 58px;
+}
+
 /*картинки для параграфов различного класса*/
 article .work {
 	background: url(../images/portfolio.png) no-repeat left 4px; 

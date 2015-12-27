@@ -1,0 +1,4 @@
+﻿Новостное агентство "SityPortalPtz"~2015 год. Стажёр. Участие в разработке front-end портала~sityportalptz.ru~sityportal.png
+Туристической фирма "Красоты России"~2015 год. Участие в разработке сайта~turismbeautyrus.ru~turismbeauty.png
+Агентсво недвижимости "Управдом"~2015 год. Участие в разработке сайта~u_pravd_om.ru~upravdom.png
+
