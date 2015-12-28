@@ -1,6 +1,14 @@
 <?php
 
+//почему-то , если закомментировать, то следующая функция не всегда работает
 $ourAdrress="http://".$_SERVER[HTTP_HOST].$_SERVER[SCRIPT_NAME];
+
+//адрес страницы, на которой находимся
+function getAurAdress() {
+    $address = "http://".$_SERVER[HTTP_HOST].$_SERVER[SCRIPT_NAME];
+     return $address;
+};
+
 
 //читаем из файла - данные в массив
 function getdatafromfile($filename) {

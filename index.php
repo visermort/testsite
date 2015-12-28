@@ -22,15 +22,15 @@
 			     <div class="social">
                     <ul>
                          <li>  <a class="vk" 
-                            href="http://vk.com/share.php?url=<?php echo $ourAdrress?>" 
+                            href="http://vk.com/share.php?url=<?php echo getAurAdress();?>" 
                             title="Поделиться в ВКонтакте" target="_blank">  
                               </a> </li>   
                          <li> <a class="twitter" 
-                             href="http://twitter.com/home?status=<?php echo $ourAdrress?>" 
+                             href="http://twitter.com/home?status=<?php echo getAurAdress();?>" 
                              title="Добавить в Twitter" target="_blank">
                              </a></li>   
                          <li> <a class="facebook" 
-                            href="http://www.facebook.com/sharer.php?u=<?php echo $ourAdrress?>" 
+                            href="http://www.facebook.com/sharer.php?u=<?php echo getAurAdress();?>" 
                             title="Поделиться в Facebook" target="_blank">   
                             </a> </li>   
                          <li> <a class="github" href="http://gitfub.com" title="Перейти на GitHub" target="_blank">   </a> </li>   
