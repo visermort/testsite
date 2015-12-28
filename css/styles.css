@@ -40,6 +40,33 @@ body {
 	font-family: "Arial Narrow","Helvetica Narrow", Tahoma, Arial, Helvetica,sans-serif;
 }
 
+html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+.page-wrapper {
+        min-height: 100%;
+        margin-bottom: -80px;
+    }
+* html .page-wrapper {
+        height: 100%;
+    }
+.page-buffer {
+        height: 80px;
+}
+
+/*подвал*/
+footer {
+	margin: 0 auto 0 auto;
+	height: 80px;
+	background-color: #eff3f7; 
+}
+footer p{
+	font-size: 13px;
+	color:color: #4a545d;
+	padding: 30px 0 30px 313px;
+}
 
 
 
@@ -49,7 +76,7 @@ header {
 	background-color: #eff3f7; 
 }
 
-/*ширира основной части без верхней и нижней полос*/
+/*ширина основной части без верхней и нижней полос*/
 nav, .mainpart, .footertext  {
     max-width: 960px;
 } 
@@ -253,15 +280,34 @@ article .lastline {
 	font-size: 15px;
 }
 
-/*подвал*/
-footer {
-	margin: 38px auto 0 auto;
-	height: 80px;
-	background-color: #eff3f7; 
-}
-footer p{
-	font-size: 13px;
-	color:color: #4a545d;
-	padding: 30px 0 30px 313px;
-}
 
+
+/*
+    <body>
+    <div class="page-wrapper">
+     
+    <div class="page-buffer"></div>
+    </div>
+    <div class="page-footer">
+     
+    </div>
+    </body>
+     
+
+
+
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .page-wrapper {
+        min-height: 100%;
+        margin-bottom: -50px;
+    }
+    * html .page-wrapper {
+        height: 100%;
+    }
+    .page-buffer {
+        height: 50px;
+    }*/
