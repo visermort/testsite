@@ -67,6 +67,9 @@ footer p{
 	font-size: 13px;
 	color:color: #4a545d;
 	padding: 30px 0 30px 313px;
+	padding-left: 313px;
+    max-height: 20px;
+    overflow: hidden;
 }
 
 
@@ -86,29 +89,18 @@ nav, .mainpart, .footertext  {
 nav, .footertext {
     margin: 0 auto; 
 }
-
-/*центральная часть  делаем отступ сверху от шапки*/
-.mainpart {
-	margin: 40px auto 0 auto;
+nav {
+	background: url(../images/logo_text.png) 63px 37px no-repeat; 
+	height: 120px;
 }
 
-/*боковая панель меню*/
-aside {
-	color: #3ba8c0;
-    width: 250px;
-    float:left;
-    background-color: #eff3f7;
-    border-radius: 4px;
-    overflow: hidden;
-    clear: both;
-}
 
 /*логотип*/
 .logo {
 	width: 50px;
 	height: 40px;
-	margin-top: 35px;
-	margin-left: 2px;
+	margin-top: 37px;
+	margin-left: -2px;
 	float: left;
 	background-image: url(../images/logo.png);
 }
@@ -137,7 +129,13 @@ aside {
 }
 
 
+
+
 /*блок социальных сетей*/
+.social {
+	float: right;
+}
+
 .social a {
 	display:block;
 	width: 47px;
@@ -145,6 +143,20 @@ aside {
     border-radius: 23.5px;
     overflow: hidden;
 }
+
+/*список кнопок соц. сетей*/
+header ul {
+	float:right;
+	margin-top: 30px;
+	margin-right: 2px;
+}
+/*элемент списка соц серей*/
+header ul li {
+	float: left;
+	margin-left: 22px;
+	list-style-type: none;
+}
+
 
 /*кнопки социальных сетей*/
 .facebook {
@@ -168,18 +180,23 @@ aside {
 }
 
 
-/*список кнопок соц. сетей*/
-header ul {
-	float:right;
-	margin-top: 30px;
-	margin-right: 2px;
+
+/*центральная часть  делаем отступ сверху от шапки*/
+.mainpart {
+	margin: 40px auto 0 auto;
 }
-/*элемент списка соц серей*/
-header ul li {
-	float: left;
-	margin-left: 22px;
-	list-style-type: none;
+
+/*боковая панель меню*/
+aside {
+	color: #3ba8c0;
+    width: 250px;
+    float:left;
+    background-color: #eff3f7;
+    border-radius: 4px;
+    overflow: hidden;
+    clear: both;
 }
+
 
 /*главное меню - элемент списка*/
 .mainmenu li {
