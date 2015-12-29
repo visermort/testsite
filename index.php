@@ -11,6 +11,7 @@
 <link  rel="stylesheet" href="css/styles.css">
 </head>
 <body class="home">
+    <div class="page-wrapper">
 			<header>
 			    <nav>
                 <nav>
@@ -57,7 +58,9 @@
                         </article>
 		         </div>	
 		    </div>
-		    
+           
+    <div class="page-buffer"></div>     
+    </div>
 		    <footer>
                 <div class="footertext" >
 		    	<p>&copy; 2015. Это мой сайт. Пожалуйста, не копируйте и не воруйте его</p>

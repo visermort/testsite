@@ -41,6 +41,7 @@ body {
 }
 
 html, body {
+		width: 100%;
         height: 100%;
         margin: 0;
         padding: 0;
@@ -79,6 +80,7 @@ header {
 /*ширина основной части без верхней и нижней полос*/
 nav, .mainpart, .footertext  {
     max-width: 960px;
+    min-width: 600px;
 } 
 
 /*центральные части шапки и подвала*/
@@ -128,7 +130,7 @@ aside {
 	float:left;
 	color: #58697a;
 /*	font-family: "Adobe Gothic Std B", Tahoma, Arial, Helvetica,sans-serif;*/
-    font-size: 25px;
+    font-size: 21px;
     text-decoration: none;
 }
 .logolink:hover {
@@ -281,33 +283,3 @@ article .lastline {
 }
 
 
-
-/*
-    <body>
-    <div class="page-wrapper">
-     
-    <div class="page-buffer"></div>
-    </div>
-    <div class="page-footer">
-     
-    </div>
-    </body>
-     
-
-
-
-    html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    .page-wrapper {
-        min-height: 100%;
-        margin-bottom: -50px;
-    }
-    * html .page-wrapper {
-        height: 100%;
-    }
-    .page-buffer {
-        height: 50px;
-    }*/
