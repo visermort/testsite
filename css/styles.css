@@ -160,16 +160,16 @@ header ul li {
 
 /*кнопки социальных сетей*/
 .facebook {
-  	background: url(../images/facebook2.png) left top;	 
+  	background: url(../images/facebook.png) left top;	 
 }
 .vk {
-  	background: url(../images/vk2.png) left top;	 
+  	background: url(../images/vk.png) left top;	 
 }
 .twitter {
-  	background: url(../images/twitter2.png) left top;	 
+  	background: url(../images/twitter.png) left top;	 
 }
 .github {
-  	background: url(../images/github2.png) left top;	 
+  	background: url(../images/github.png) left top;	 
 }
 /*при проведении мыши позиция картинок смещается*/
 .github:hover ,
