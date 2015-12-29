@@ -13,13 +13,10 @@
 <body class="home">
     <div class="page-wrapper">
 			<header>
-			    <nav>
                 <nav>
-                   <a class="logolink" href="http://loftschool.ru" title="LoftSchool" target="_blank">
-                       <img src="/images/logo_unit.png" alt="LoftSchool. От мыслителя к создателю"/>
-                       <!--  <div class="logo"></div>
-                         <div class="logotext"></div> -->
-                   </a>
+                  <a class="logolink" href="http://loftschool.ru" title="LoftSchool" target="_blank">
+                       <img src="/images/logo.png" alt="" /> 
+                           </a>      
 			     <div class="social">
                     <ul>
                          <li>  <a class="vk" 
