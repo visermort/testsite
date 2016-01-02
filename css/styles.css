@@ -33,10 +33,6 @@ body {
 /*фон страницы*/
 body {
 	background:  #fbfcfd url(../images/background.jpg) top left;
-/*	background: url(../images/background.png) top left repeat-x;
-	background: url(../images/header.png) left top repeat-x,
-	            url(../images/footer.png) left 690px repeat-x,
-	            url(../images/background.jpg) left 120px repeat-x;*/
 	font-family: "Arial Narrow","Helvetica Narrow", Tahoma, Arial, Helvetica,sans-serif;
 }
 
@@ -45,7 +41,9 @@ html, body {
         height: 100%;
         margin: 0;
         padding: 0;
+        min-width: 550px;   
     }
+
 .page-wrapper {
         min-height: 100%;
         margin-bottom: -80px;
@@ -87,11 +85,12 @@ nav, .mainpart, .footertext  {
 
 /*центральные части шапки и подвала*/
 nav, .footertext {
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 nav {
-	background: url(../images/logo_text.png) 63px 37px no-repeat; 
+	/*background: url(../images/logo_text.png) 63px 37px no-repeat; */
 	height: 120px;
+    /*min-width: 600px;*/
 }
 
 
@@ -132,9 +131,9 @@ nav {
 
 
 /*блок социальных сетей*/
-.social {
+/*.social {
 	float: right;
-}
+}*/
 
 .social a {
 	display:block;

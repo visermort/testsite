@@ -15,7 +15,7 @@
 			<header>
                 <nav>
                   <a class="logolink" href="http://loftschool.ru" title="LoftSchool" target="_blank">
-                       <img src="/images/logo.png" alt="" /> 
+                       <img src="/images/logo_unit.png" alt="" /> 
                            </a>      
 			     <div class="social">
                     <ul>
