@@ -68,7 +68,7 @@ function getprojects(){
                 }//if ($workarr) foreach
             echo $res;    
 }//function 
-
+//todo I must do something
 
 //проекты с моим участием
 /** @return string*/
