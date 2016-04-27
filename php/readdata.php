@@ -44,7 +44,7 @@ function getworks() {
 
  //аналогично с небольшим отличием читаем места учёбы
 function getstudy() {
-            $filename="data\\study.txt";
+            $filename="data/study.txt";
 			$workarr=getdatafromfile($filename);
             $res="";  
             //print_r($workarr);
@@ -57,7 +57,7 @@ function getstudy() {
 
 //мои проекты
 function getprojects(){
-            $filename="data\projects.txt";
+            $filename="data/projects.txt";
 			$workarr=getdatafromfile($filename);
             $res="";  
            // print_r($workarr);
@@ -71,8 +71,9 @@ function getprojects(){
 
 
 //проекты с моим участием
+/** @return string*/
 function getTakePart(){
-            $filename="data\\takepart.txt";
+            $filename="data/takepart.txt";
 			//echo $filename;
 			$workarr=getdatafromfile($filename);
             $res="";  
@@ -84,6 +85,9 @@ function getTakePart(){
                 }//if ($workarr) foreach
             echo $res;    
 }
+
+
+
 
 
 

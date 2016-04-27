@@ -7,7 +7,7 @@
 <!--[if lt IE 9]>
 <script type="text/javascript" src="js/html5shiv.js"></script>
 <![endif]-->
-<?php require_once("bin/readdata.php");  ?>
+<?php require_once("php/readdata.php");  ?>
 <link  rel="stylesheet" href="css/styles.css">
 </head>
 <body class="portfolio">
@@ -47,7 +47,7 @@
 		         <div class="content">
                         <article>
                         	<h2>Мои проекты</h2>
-                            <?php getprojects()?>	
+                            <?php getprojects()?>
                         </article>
                         <article>
                         	<h2>Проекты с моим участием</h2>
